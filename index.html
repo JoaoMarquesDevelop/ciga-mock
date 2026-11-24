@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar Fiscal — acesso</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="login">
+  <div class="card">
+    <div class="brand" style="font-size:22px">Radar Fiscal</div>
+    <p class="st" style="margin:2px 0 18px">Avisa antes quando o dinheiro do Ciga pode apertar, e explica por quê</p>
+    <h1 style="font-size:28px">Entrar</h1>
+    <p class="lede" style="margin-bottom:6px">Você entra com o <b>mesmo login que já usa no Ciga</b>. Não precisa criar uma senha nova. A confirmação em duas etapas também é a do Ciga.</p>
+    <p class="lede">O que cada pessoa vê depende da área em que ela foi colocada no login do Ciga. Nesta demonstração, escolha uma área para entrar:</p>
+    <div class="roles">
+      <a class="btn" href="pages/dirigente/visao-geral.html">Entrar como Dirigente <span>o resumo para decidir</span></a>
+      <a class="btn" href="pages/gestor/painel.html">Entrar como Gestor <span>números, simulações e acessos</span></a>
+      <a class="btn" href="pages/contador/analise.html">Entrar como Contador <span>a conta de cada alerta e as regras</span></a>
+    </div>
+    <details>
+      <summary>Como o login vai funcionar de verdade</summary>
+      <ol style="font-size:14px;color:var(--ink2);padding-left:20px">
+        <li>A pessoa clica em "Entrar com a conta do Ciga" e vai para a tela de login que o Ciga já usa (padrão OpenID Connect ou SAML).</li>
+        <li>O Ciga confirma quem ela é, com a confirmação em duas etapas, e manda para o Radar Fiscal só o nome, o e-mail e o grupo dela.</li>
+        <li>O grupo decide a área: GRP-RADAR-DIRIGENTE, GRP-RADAR-GESTOR ou GRP-RADAR-CONTADOR. Quem não está em nenhum grupo não entra.</li>
+        <li>Para dar, mudar ou tirar um acesso, o Ciga só mexe no grupo. Tudo fica anotado no histórico.</li>
+      </ol>
+    </details>
+    <p class="disc">Demonstração feita pela Code Marques para o Edital de Licitação Especial nº 01/2026 (CPSI) do Ciga. Os números e as pessoas são inventados.</p>
+  </div>
+</main>
+</body>
+</html>
